@@ -1,10 +1,10 @@
 # LLM Citation Verifier
 
-An LLM plugin that verifies academic citations against the Crossref database to catch hallucinated references in AI-generated content.
+An [LLM](https://llm.datasette.io/en/stable/) plugin that verifies academic citations against the [Crossref](https://www.crossref.org/documentation/retrieve-metadata/rest-api/a-non-technical-introduction-to-our-api/) database to catch hallucinated references in AI-generated content.
 
 ## The Problem
 
-AI research tools frequently hallucinate citations - generating plausible-looking DOIs for papers that don't exist. Testing showed some tools fabricate 75% of their references.
+AI research tools sometimes hallucinate citations - generating plausible-looking DOIs for papers that don't exist.
 
 ## The Solution
 
