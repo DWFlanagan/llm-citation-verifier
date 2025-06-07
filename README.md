@@ -86,6 +86,7 @@ Tool call: verify_citation({'doi': '10.1016/j.cell.2023.02.029'})
 git clone https://github.com/your-org/llm-citation-verifier
 cd llm-citation-verifier
 uv sync
+uv pip install -e .
 uv run pytest
 ```
 
