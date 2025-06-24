@@ -16,6 +16,7 @@ citation_verifier = "llm_citation_verifier"  # Point to __init__.py instead of p
 
 [dependency-groups]
 dev = [
+    "mypy>=1.16.1",
     "pytest>=8.4.0",
     "pytest-cov>=6.1.1",
     "ruff>=0.11.12",
