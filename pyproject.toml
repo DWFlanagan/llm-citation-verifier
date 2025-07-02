@@ -2,7 +2,7 @@
 name = "llm-citation-verifier"
 version = "0.1.0"
 description = "LLM plugin for verifying academic citations against Crossref"
-authors = [{name = "Dave Flanagan", email = "your-email@wiley.com"}]
+authors = [{name = "Dave Flanagan"}]
 license = {text = "MIT"}
 readme = "README.md"
 requires-python = ">=3.9"
