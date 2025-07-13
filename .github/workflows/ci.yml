@@ -1,12 +1,12 @@
-name: Release
+name: CI
 
 on:
   push:
-    tags:
-      - v*
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  # First run all the tests
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -36,19 +36,3 @@ jobs:
     
     - name: Test package build
       run: uv build
-
-  # Only publish if tests pass
-  pypi:
-    name: Publish to PyPI
-    runs-on: ubuntu-latest
-    needs: test  # This makes it wait for tests to pass
-    environment:
-      name: release
-    permissions:
-      id-token: write
-    
-    steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v3
-      - run: uv build
-      - run: uv publish --trusted-publishing always
