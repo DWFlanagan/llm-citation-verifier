@@ -97,7 +97,7 @@ class CitationVerifier:
                 return {
                     "verified": False,
                     "doi": doi,
-                    "error": "DOI not found in Crossref database - likely hallucinated",
+                    "error": "DOI not found in Crossref database - possibly hallucinated",
                 }
             else:
                 return {
