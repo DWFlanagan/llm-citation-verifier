@@ -13,12 +13,13 @@ This plugin automatically verifies citations in real-time, flagging fake DOIs an
 ## Installation
 
 ```bash
-llm install git+https://github.com/DWFlanagan/llm-citation-verifier.git
+llm install llm-citation-verifier
 ```
 
 ## Usage Examples
 
 ### Real-Time Citation Verification
+
 ```bash
 # Verify citations as the LLM generates content
 llm -T verify_citation "What's new in dye sensitized solar cells? Check all the references." --td
@@ -28,6 +29,7 @@ llm -T verify_citation "What's one recent breakthrough in cancer immunotherapy? 
 ```
 
 ### Quality Control for AI Content
+
 ```bash
 # Review suspicious AI-generated content
 llm -T verify_citation "This AI tool cited these papers: 10.1038/nature12373 and 10.1234/fake.doi.2024. Check if they're real." --td
@@ -37,6 +39,7 @@ llm -T verify_citation "Verify these DOIs from an AI summary: 10.1038/nature1237
 ```
 
 ### Research Integrity
+
 ```bash
 # Audit AI research tools
 llm -T verify_citation "Tell me about recent AI alignment breakthroughs. Verify any papers you cite." --td
