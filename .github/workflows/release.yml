@@ -8,11 +8,10 @@ on:
 
 jobs:
   pypi:
-    name: Publish to PyPI
+    name: Publish to Test PyPI
     runs-on: ubuntu-latest
-    # Environment and permissions trusted publishing.
+    # Environment and permissions for trusted publishing
     environment:
-      # Create this environment in the GitHub repository under Settings -> Environments
       name: release
     permissions:
       id-token: write
@@ -20,4 +19,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v3
       - run: uv build
-      - run: uv publish --trusted-publishing always --publish-url https://test.pypi.org  
+      - run: uv publish --trusted-publishing always --publish-url https://test.pypi.org/legacy/
