@@ -1,6 +1,6 @@
 [project]
 name = "llm-citation-verifier"
-version = "0.0.3"
+version = "0.1.0"
 description = "LLM plugin for verifying academic citations against Crossref"
 authors = [{name = "Dave Flanagan"}]
 license = {text = "MIT"}
